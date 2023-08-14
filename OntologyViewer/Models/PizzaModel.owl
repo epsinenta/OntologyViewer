@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl">
+    <Prefix name="" IRI="http://www.lesfleursdunormal.fr/static/_downloads/pizza_onto.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetablesTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_topping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_topping_for"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bacon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Margherita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MozzarelaCheese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pepperoni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PepperoniTopping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salmon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shrimps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomatoes"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#Topping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishTopping"/>
+        <Class IRI="#Topping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#Topping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetablesTopping"/>
+        <Class IRI="#Topping"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#FishTopping"/>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#VegetablesTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pizza"/>
+        <Class IRI="#Topping"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#MeatTopping"/>
+        <NamedIndividual IRI="#Bacon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pizza"/>
+        <NamedIndividual IRI="#Margherita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CheeseTopping"/>
+        <NamedIndividual IRI="#MozzarelaCheese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CheeseTopping"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pizza"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeatTopping"/>
+        <NamedIndividual IRI="#PepperoniTopping"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VegetablesTopping"/>
+        <NamedIndividual IRI="#Salad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FishTopping"/>
+        <NamedIndividual IRI="#Salmon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pizza"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FishTopping"/>
+        <NamedIndividual IRI="#Shrimps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VegetablesTopping"/>
+        <NamedIndividual IRI="#Tomatoes"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#Bacon"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Margherita"/>
+        <NamedIndividual IRI="#MozzarelaCheese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Margherita"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Margherita"/>
+        <NamedIndividual IRI="#Salad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Margherita"/>
+        <NamedIndividual IRI="#Tomatoes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#MozzarelaCheese"/>
+        <NamedIndividual IRI="#Margherita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+        <NamedIndividual IRI="#Margherita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+        <NamedIndividual IRI="#Bacon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+        <NamedIndividual IRI="#PepperoniTopping"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#PepperoniTopping"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#Salad"/>
+        <NamedIndividual IRI="#Margherita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#Salmon"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+        <NamedIndividual IRI="#OrdinaryCheese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+        <NamedIndividual IRI="#Salmon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_topping"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+        <NamedIndividual IRI="#Shrimps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_topping_for"/>
+        <NamedIndividual IRI="#Tomatoes"/>
+        <NamedIndividual IRI="#Margherita"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Margherita"/>
+        <Literal>10$</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Pepperoni"/>
+        <Literal>12$</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#ShrimpPizza"/>
+        <Literal>13$</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_topping"/>
+        <Class IRI="#Pizza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_topping"/>
+        <Class IRI="#Topping"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

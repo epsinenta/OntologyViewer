@@ -1,0 +1,1458 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ekaterina/ontologies/2019/10/dogs"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ekaterina/ontologies/2019/10/dogs">
+    <Prefix name="" IRI="http://www.semanticweb.org/ekaterina/ontologies/2019/10/dogs"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Airedale_terrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_water_spaniel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Applications"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beagle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Border_collie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dalmatian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Habitat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herding_dos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hound_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Named_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-Sporting_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pekingese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siberian_husky"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sporting_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terriers_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toys_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Working_dogs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#average_dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#competitions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#exhibition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#farm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fluffy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#giant_dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#help"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hunting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#large_dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#longhair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#naked"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#protection_of_objects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#riding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#search"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shorthair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#small_dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#smooth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tiny_dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wirehaired"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasApplication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHabitat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeigth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Croatia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moscow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Russia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vilena"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Airedale_terrier"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#protection_of_objects"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#wirehaired"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#large_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#protection_of_objects"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#wirehaired"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#large_dog"/>
+            </ObjectAllValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasOrigin"/>
+                <NamedIndividual IRI="#UK"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#American_water_spaniel"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#competitions"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#shorthair"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#average_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#competitions"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#shorthair"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#average_dog"/>
+            </ObjectAllValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasOrigin"/>
+                <NamedIndividual IRI="#USA"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Beagle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#shorthair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasOrigin"/>
+                    <NamedIndividual IRI="#Poland"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasOrigin"/>
+                    <NamedIndividual IRI="#UK"/>
+                </ObjectHasValue>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#hunting"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#average_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#hunting"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#shorthair"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#average_dog"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Border_collie"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#longhair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#farm"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#average_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#farm"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#longhair"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#average_dog"/>
+            </ObjectAllValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasOrigin"/>
+                <NamedIndividual IRI="#UK"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="owl:Thing"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Australia"/>
+                <NamedIndividual IRI="#China"/>
+                <NamedIndividual IRI="#Croatia"/>
+                <NamedIndividual IRI="#France"/>
+                <NamedIndividual IRI="#Germany"/>
+                <NamedIndividual IRI="#Poland"/>
+                <NamedIndividual IRI="#Russia"/>
+                <NamedIndividual IRI="#UK"/>
+                <NamedIndividual IRI="#USA"/>
+            </ObjectOneOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dalmatian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#hunting"/>
+                        <Class IRI="#protection_of_objects"/>
+                        <Class IRI="#search"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#competitions"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#smooth"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#large_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#competitions"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#smooth"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#large_dog"/>
+            </ObjectAllValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasOrigin"/>
+                <NamedIndividual IRI="#Croatia"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dogs"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#Applications"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#Coat"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#Size"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dogs"/>
+        <ObjectUnionOf>
+            <Class IRI="#Herding_dos"/>
+            <Class IRI="#Hound_dogs"/>
+            <Class IRI="#Non-Sporting_dogs"/>
+            <Class IRI="#Sporting_dogs"/>
+            <Class IRI="#Terriers_dogs"/>
+            <Class IRI="#Toys_dogs"/>
+            <Class IRI="#Working_dogs"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Habitat"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="owl:Thing"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Moscow"/>
+            </ObjectOneOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Herding_dos"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#fluffy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#longhair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#average_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#giant_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#large_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#farm"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#farm"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#fluffy"/>
+                    <Class IRI="#longhair"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <ObjectUnionOf>
+                    <Class IRI="#average_dog"/>
+                    <Class IRI="#giant_dog"/>
+                    <Class IRI="#large_dog"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hound_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#shorthair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#smooth"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#average_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#large_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#hunting"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#hunting"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#shorthair"/>
+                    <Class IRI="#smooth"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <ObjectUnionOf>
+                    <Class IRI="#average_dog"/>
+                    <Class IRI="#large_dog"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Non-Sporting_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Herding_dos"/>
+                    <Class IRI="#Hound_dogs"/>
+                    <Class IRI="#Sporting_dogs"/>
+                    <Class IRI="#Terriers_dogs"/>
+                    <Class IRI="#Toys_dogs"/>
+                    <Class IRI="#Working_dogs"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pekingese"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#exhibition"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#room"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#fluffy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#tiny_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <ObjectUnionOf>
+                    <Class IRI="#exhibition"/>
+                    <Class IRI="#room"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#fluffy"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#tiny_dog"/>
+            </ObjectAllValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasOrigin"/>
+                <NamedIndividual IRI="#China"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Siberian_husky"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Named_dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#fluffy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#riding"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#large_dog"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#riding"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#fluffy"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#large_dog"/>
+            </ObjectAllValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasOrigin"/>
+                <NamedIndividual IRI="#Russia"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sporting_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#shorthair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#average_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#giant_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#large_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#competitions"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#competitions"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#shorthair"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <ObjectUnionOf>
+                    <Class IRI="#average_dog"/>
+                    <Class IRI="#giant_dog"/>
+                    <Class IRI="#large_dog"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Terriers_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#protection_of_objects"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#search"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <ObjectUnionOf>
+                    <Class IRI="#protection_of_objects"/>
+                    <Class IRI="#search"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Toys_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#exhibition"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#room"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#fluffy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#naked"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#shorthair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#smooth"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#average_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#tiny_dog"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <ObjectUnionOf>
+                    <Class IRI="#exhibition"/>
+                    <Class IRI="#room"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#fluffy"/>
+                    <Class IRI="#naked"/>
+                    <Class IRI="#shorthair"/>
+                    <Class IRI="#smooth"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <ObjectUnionOf>
+                    <Class IRI="#average_dog"/>
+                    <Class IRI="#small_dog"/>
+                    <Class IRI="#tiny_dog"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Working_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#help"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasApplication"/>
+                    <Class IRI="#riding"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#fluffy"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#longhair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#shorthair"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasCoat"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#average_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#large_dog"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasSize"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <ObjectUnionOf>
+                    <Class IRI="#help"/>
+                    <Class IRI="#riding"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <ObjectUnionOf>
+                    <Class IRI="#fluffy"/>
+                    <Class IRI="#longhair"/>
+                    <Class IRI="#shorthair"/>
+                    <Class IRI="#wirehaired"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <ObjectUnionOf>
+                    <Class IRI="#average_dog"/>
+                    <Class IRI="#large_dog"/>
+                    <Class IRI="#small_dog"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#average_dog"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasHeigth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">40</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">54</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#giant_dog"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasHeigth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">75</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#large_dog"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasHeigth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">55</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">74</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">26</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">49</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#small_dog"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasHeigth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">39</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#tiny_dog"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasHeigth"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">29</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Herding_dos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <Class IRI="#farm"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herding_dos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCoat"/>
+            <ObjectUnionOf>
+                <Class IRI="#fluffy"/>
+                <Class IRI="#longhair"/>
+                <Class IRI="#wirehaired"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herding_dos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSize"/>
+            <ObjectUnionOf>
+                <Class IRI="#average_dog"/>
+                <Class IRI="#giant_dog"/>
+                <Class IRI="#large_dog"/>
+                <Class IRI="#small_dog"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hound_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <Class IRI="#hunting"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hound_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCoat"/>
+            <ObjectUnionOf>
+                <Class IRI="#shorthair"/>
+                <Class IRI="#smooth"/>
+                <Class IRI="#wirehaired"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hound_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSize"/>
+            <ObjectUnionOf>
+                <Class IRI="#average_dog"/>
+                <Class IRI="#large_dog"/>
+                <Class IRI="#small_dog"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Sporting_dogs"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dogs"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasApplication"/>
+                <Class IRI="#Applications"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#Coat"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#Size"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sporting_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <Class IRI="#competitions"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sporting_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCoat"/>
+            <ObjectUnionOf>
+                <Class IRI="#shorthair"/>
+                <Class IRI="#wirehaired"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sporting_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSize"/>
+            <ObjectUnionOf>
+                <Class IRI="#average_dog"/>
+                <Class IRI="#giant_dog"/>
+                <Class IRI="#large_dog"/>
+                <Class IRI="#small_dog"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terriers_dogs"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCoat"/>
+                <Class IRI="#Coat"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSize"/>
+                <Class IRI="#Size"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terriers_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <ObjectUnionOf>
+                <Class IRI="#protection_of_objects"/>
+                <Class IRI="#search"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toys_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <ObjectUnionOf>
+                <Class IRI="#exhibition"/>
+                <Class IRI="#room"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toys_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCoat"/>
+            <ObjectUnionOf>
+                <Class IRI="#fluffy"/>
+                <Class IRI="#naked"/>
+                <Class IRI="#shorthair"/>
+                <Class IRI="#smooth"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toys_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSize"/>
+            <ObjectUnionOf>
+                <Class IRI="#average_dog"/>
+                <Class IRI="#small_dog"/>
+                <Class IRI="#tiny_dog"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Working_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <ObjectUnionOf>
+                <Class IRI="#help"/>
+                <Class IRI="#riding"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Working_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCoat"/>
+            <ObjectUnionOf>
+                <Class IRI="#fluffy"/>
+                <Class IRI="#longhair"/>
+                <Class IRI="#shorthair"/>
+                <Class IRI="#wirehaired"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Working_dogs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSize"/>
+            <ObjectUnionOf>
+                <Class IRI="#average_dog"/>
+                <Class IRI="#large_dog"/>
+                <Class IRI="#small_dog"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#average_dog"/>
+        <Class IRI="#Size"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#competitions"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exhibition"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#farm"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fluffy"/>
+        <Class IRI="#Coat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#giant_dog"/>
+        <Class IRI="#Size"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#help"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hunting"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#large_dog"/>
+        <Class IRI="#Size"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#longhair"/>
+        <Class IRI="#Coat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#naked"/>
+        <Class IRI="#Coat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#protection_of_objects"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#riding"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#room"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#search"/>
+        <Class IRI="#Applications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shorthair"/>
+        <Class IRI="#Coat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#small_dog"/>
+        <Class IRI="#Size"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#smooth"/>
+        <Class IRI="#Coat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tiny_dog"/>
+        <Class IRI="#Size"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wirehaired"/>
+        <Class IRI="#Coat"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Herding_dos"/>
+        <Class IRI="#Hound_dogs"/>
+        <Class IRI="#Non-Sporting_dogs"/>
+        <Class IRI="#Sporting_dogs"/>
+        <Class IRI="#Terriers_dogs"/>
+        <Class IRI="#Toys_dogs"/>
+        <Class IRI="#Working_dogs"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#average_dog"/>
+        <Class IRI="#giant_dog"/>
+        <Class IRI="#large_dog"/>
+        <Class IRI="#small_dog"/>
+        <Class IRI="#tiny_dog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#fluffy"/>
+        <Class IRI="#longhair"/>
+        <Class IRI="#naked"/>
+        <Class IRI="#shorthair"/>
+        <Class IRI="#smooth"/>
+        <Class IRI="#wirehaired"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Croatia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Habitat"/>
+        <NamedIndividual IRI="#Moscow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Poland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#UK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#USA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beagle"/>
+        <NamedIndividual IRI="#Vilena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hound_dogs"/>
+        <NamedIndividual IRI="#Vilena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasApplication"/>
+            <Class IRI="#hunting"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Vilena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCoat"/>
+            <Class IRI="#wirehaired"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Vilena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSize"/>
+            <Class IRI="#average_dog"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Vilena"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHabitat"/>
+        <NamedIndividual IRI="#Vilena"/>
+        <NamedIndividual IRI="#Moscow"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Vilena"/>
+        <NamedIndividual IRI="#Poland"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHeigth"/>
+        <NamedIndividual IRI="#Vilena"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Vilena"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasHabitat"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasApplication"/>
+        <Class IRI="#Applications"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCoat"/>
+        <Class IRI="#Coat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSize"/>
+        <Class IRI="#Size"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasHeigth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWeight"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeigth"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeight"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

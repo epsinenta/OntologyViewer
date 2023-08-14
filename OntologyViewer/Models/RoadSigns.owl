@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.roadsigns.com/ontologies/roadsigns.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.roadsigns.com/ontologies/roadsigns.owl">
+    <Prefix name="" IRI="http://www.roadsigns.com/ontologies/roadsigns.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driving_conditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road_sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Белый"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Вне_населенного_пункта"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Время_суток"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#День"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Дополнительная_информация"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Другое"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Желтый"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Запрещает"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Запрещающий_знак"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Зеленый"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Знак_дополнительной_информации"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Знак_особого_предписания"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Знак_приоритета"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Знак_сервиса"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Информационно_указывающий_знак"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Квадрат"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Красный"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Крест"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Круг"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Место_движения"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Населенный_пункт"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ночь"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Особое_предписание"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Погода"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Предписывает"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Предписывающий_знак"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Предупреждает"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Предупреждающий_знак"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Приоритет"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Прямоугольник"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Сервис"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Синий"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Снег"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Треугольник"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Указывает_информацию"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Черный"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDriving_conditions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasВремя_суток"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasМесто_движения"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasПогода"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Влажное_покрытие"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Время_действия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Въезд_запрещен"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Главная_дорога"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Круговое_движение"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пешеходный_переход"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Приближение_к_железнодорожному_переезду"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пункт_медицинской_помощи"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рекомендуемая_скорость"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Запрещающий_знак"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Белый"/>
+                        <Class IRI="#Красный"/>
+                        <Class IRI="#Синий"/>
+                        <Class IRI="#Черный"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <Class IRI="#Круг"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Белый"/>
+                        <Class IRI="#Красный"/>
+                        <Class IRI="#Синий"/>
+                        <Class IRI="#Черный"/>
+                    </ObjectUnionOf>
+                </ObjectAllValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <Class IRI="#Круг"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Запрещает"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Запрещает"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Знак_дополнительной_информации"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <Class IRI="#Color"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasВремя_суток"/>
+                    <Class IRI="#Время_суток"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Квадрат"/>
+                        <Class IRI="#Прямоугольник"/>
+                    </ObjectUnionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Дополнительная_информация"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Дополнительная_информация"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Знак_особого_предписания"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <Class IRI="#Color"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasМесто_движения"/>
+                    <Class IRI="#Место_движения"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Квадрат"/>
+                        <Class IRI="#Прямоугольник"/>
+                    </ObjectUnionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Особое_предписание"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Особое_предписание"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Знак_приоритета"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Желтый"/>
+                    <Class IRI="#Красный"/>
+                    <Class IRI="#Синий"/>
+                    <Class IRI="#Черный"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Другое"/>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Круг"/>
+                    <Class IRI="#Треугольник"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Приоритет"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Желтый"/>
+                    <Class IRI="#Красный"/>
+                    <Class IRI="#Синий"/>
+                    <Class IRI="#Черный"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Другое"/>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Круг"/>
+                    <Class IRI="#Треугольник"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Приоритет"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Знак_сервиса"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Белый"/>
+                        <Class IRI="#Красный"/>
+                        <Class IRI="#Синий"/>
+                        <Class IRI="#Черный"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Белый"/>
+                        <Class IRI="#Красный"/>
+                        <Class IRI="#Синий"/>
+                        <Class IRI="#Черный"/>
+                    </ObjectUnionOf>
+                </ObjectAllValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Сервис"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Сервис"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Информационно_указывающий_знак"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <Class IRI="#Color"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Другое"/>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Указывает_информацию"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Другое"/>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Указывает_информацию"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Предписывающий_знак"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Желтый"/>
+                    <Class IRI="#Красный"/>
+                    <Class IRI="#Синий"/>
+                    <Class IRI="#Черный"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Круг"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Предписывает"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Желтый"/>
+                    <Class IRI="#Красный"/>
+                    <Class IRI="#Синий"/>
+                    <Class IRI="#Черный"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Круг"/>
+                    <Class IRI="#Прямоугольник"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Предписывает"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Предупреждающий_знак"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Road_sign"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasColor"/>
+                    <Class IRI="#Color"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasМесто_движения"/>
+                    <Class IRI="#Место_движения"/>
+                </ObjectSomeValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasShape"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#Квадрат"/>
+                        <Class IRI="#Крест"/>
+                        <Class IRI="#Прямоугольник"/>
+                        <Class IRI="#Треугольник"/>
+                    </ObjectUnionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Квадрат"/>
+                    <Class IRI="#Крест"/>
+                    <Class IRI="#Прямоугольник"/>
+                    <Class IRI="#Треугольник"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Предупреждает"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#Предупреждает"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Белый"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Вне_населенного_пункта"/>
+        <Class IRI="#Место_движения"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Время_суток"/>
+        <Class IRI="#Driving_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#День"/>
+        <Class IRI="#Время_суток"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Дополнительная_информация"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Другое"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Желтый"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Запрещает"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Зеленый"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Квадрат"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Красный"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Крест"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Круг"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Место_движения"/>
+        <Class IRI="#Driving_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Населенный_пункт"/>
+        <Class IRI="#Место_движения"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ночь"/>
+        <Class IRI="#Время_суток"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Особое_предписание"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Погода"/>
+        <Class IRI="#Driving_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Предписывает"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Предупреждает"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Приоритет"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Прямоугольник"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Сервис"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Синий"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Снег"/>
+        <Class IRI="#Погода"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Треугольник"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Указывает_информацию"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Черный"/>
+        <Class IRI="#Color"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Вне_населенного_пункта"/>
+        <Class IRI="#Населенный_пункт"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Другое"/>
+        <Class IRI="#Квадрат"/>
+        <Class IRI="#Крест"/>
+        <Class IRI="#Круг"/>
+        <Class IRI="#Прямоугольник"/>
+        <Class IRI="#Треугольник"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Запрещающий_знак"/>
+        <Class IRI="#Знак_дополнительной_информации"/>
+        <Class IRI="#Знак_особого_предписания"/>
+        <Class IRI="#Знак_приоритета"/>
+        <Class IRI="#Знак_сервиса"/>
+        <Class IRI="#Информационно_указывающий_знак"/>
+        <Class IRI="#Предписывающий_знак"/>
+        <Class IRI="#Предупреждающий_знак"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Знак_дополнительной_информации"/>
+        <NamedIndividual IRI="#Влажное_покрытие"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Черный"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Прямоугольник"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasПогода"/>
+                <Class IRI="#Снег"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Влажное_покрытие"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Знак_дополнительной_информации"/>
+        <NamedIndividual IRI="#Время_действия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Черный"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Прямоугольник"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasВремя_суток"/>
+                <Class IRI="#День"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Время_действия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Запрещающий_знак"/>
+        <NamedIndividual IRI="#Въезд_запрещен"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasColor"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Белый"/>
+                <Class IRI="#Красный"/>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Въезд_запрещен"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Знак_приоритета"/>
+        <NamedIndividual IRI="#Главная_дорога"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Желтый"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Квадрат"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Главная_дорога"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Предписывающий_знак"/>
+        <NamedIndividual IRI="#Круговое_движение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Синий"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Круг"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Круговое_движение"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Знак_особого_предписания"/>
+        <NamedIndividual IRI="#Пешеходный_переход"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Синий"/>
+                    <Class IRI="#Черный"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Квадрат"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Пешеходный_переход"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Предупреждающий_знак"/>
+        <NamedIndividual IRI="#Приближение_к_железнодорожному_переезду"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Красный"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Прямоугольник"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasМесто_движения"/>
+                <Class IRI="#Вне_населенного_пункта"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Приближение_к_железнодорожному_переезду"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Знак_сервиса"/>
+        <NamedIndividual IRI="#Пункт_медицинской_помощи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Красный"/>
+                    <Class IRI="#Синий"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Прямоугольник"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Пункт_медицинской_помощи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Информационно_указывающий_знак"/>
+        <NamedIndividual IRI="#Рекомендуемая_скорость"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasColor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Белый"/>
+                    <Class IRI="#Синий"/>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#Квадрат"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Рекомендуемая_скорость"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasВремя_суток"/>
+        <ObjectProperty IRI="#hasDriving_conditions"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasМесто_движения"/>
+        <ObjectProperty IRI="#hasDriving_conditions"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasПогода"/>
+        <ObjectProperty IRI="#hasDriving_conditions"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasType"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColor"/>
+        <Class IRI="#Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasВремя_суток"/>
+        <Class IRI="#Время_суток"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasМесто_движения"/>
+        <Class IRI="#Место_движения"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasПогода"/>
+        <Class IRI="#Погода"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Запрещающий_знак</IRI>
+        <Literal>Запрещающие знаки вводят или отменяют определенные ограничения движения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Знак_дополнительной_информации</IRI>
+        <Literal>Знаки дополнительной информации уточняют или ограничивают действие знаков, с которыми они применены, либо содержат иную информацию для участников дорожного движения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Знак_особого_предписания</IRI>
+        <Literal>Знаки особых предписаний вводят или отменяют определенные режимы движения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Знак_приоритета</IRI>
+        <Literal>Знаки приоритета устанавливают очередность проезда перекрестков, пересечений проезжих частей или узких участков дороги.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Знак_сервиса</IRI>
+        <Literal>Знаки сервиса информируют о расположении соответствующих объектов.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Информационно_указывающий_знак</IRI>
+        <Literal>Информационные знаки информируют о расположении населенных пунктов и других объектов, а также об установленных или о рекомендуемых режимах движения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Предупреждающий_знак</IRI>
+        <Literal>Предупреждающие знаки информируют водителей о приближении к опасному участку дороги, движение по которому требует принятия мер, соответствующих обстановке.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Пункт_медицинской_помощи</IRI>
+        <Literal>Знак, указывающий, что дальше по дороге находится пункт медицинской помощи.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Рекомендуемая_скорость</IRI>
+        <Literal>Скорость, с которой рекомендуется движение на данном участке дороги. Зона действия знака распространяется до ближайшего перекрестка, а при применении этого знака совместно с предупреждающим знаком определяется протяженностью опасного участка.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

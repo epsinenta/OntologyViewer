@@ -1,0 +1,1832 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15">
+        <rdfs:comment xml:lang="en">The aim of this ontology is to give larger presentation about kanji
+У каждого иероглифа есть ключ, сложность (легкий, средняя сложность, сложный) и принадлежность к какому-либо классу вещей (природа, человек и пр)
+Цифра у ключа означает количество черт, из которых состоит ключ. Например, ключи birdkey и fishkey состоят из 11 черт.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#IsFeatureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#IsFeatureOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasFeatures"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasFeatures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasFeatures">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasFeatures"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#isKeyOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#isKeyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#isKeyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#IsFeatureOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#AnimalKanji -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#AnimalKanji">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ArrowKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ArrowKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#AxKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#AxKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BabyKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BabyKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BambooKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BambooKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BigKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BigKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BirdKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BirdKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#11Key"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FishKey"/>
+        <rdfs:comment>tori - птица</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BlackKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BlackKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#13Key"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#YellowKey"/>
+        <rdfs:comment>kuro - черный</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BloodKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BloodKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BobKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BobKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Things"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TreeKey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BoxKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BoxKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ClothesKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ClothesKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ColorKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ColorKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CoverKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CoverKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CowKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CowKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CrossKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CrossKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CrownKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CrownKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DeathKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DeathKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DemonKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DemonKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#10Key"/>
+        <rdfs:comment>oni - демон</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DirectionKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DirectionKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DogKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DogKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DorKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DorKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DragonKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DragonKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#16Key"/>
+        <rdfs:comment>ryuu - дракон</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DropsOfWaterKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DropsOfWaterKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DryKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DryKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EarKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EarKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EarthKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EarthKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EightKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EightKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EnterKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EnterKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EveningKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EveningKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EyeKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EyeKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FatherKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FatherKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FireKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FireKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FishHookKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FishHookKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#1Key"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OneKey"/>
+        <rdfs:comment>otsu - рыбий крюк</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FishKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FishKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#11Key"/>
+        <rdfs:comment>uo - рыба</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FlagKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FlagKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FluteKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FluteKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#17Key"/>
+        <rdfs:comment>yaku - флейта</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FlyKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FlyKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FoodKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FoodKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GateKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GateKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GlueKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GlueKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GoKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GoKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GreenBlueKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GreenBlueKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HandKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HandKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HeadKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HeadKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HeartKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HeartKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HighLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HighLevel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HorseKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HorseKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#10Key"/>
+        <rdfs:comment>uma - лошадь</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HumanFeetKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HumanFeetKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#InsectKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#InsectKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Investigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Investigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MiddleLevel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Things"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TreeKey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>査&quot;расследование&quot;
+Он-ёми
+ サ - sa 
+　　  проверять, расседовать (в сочетаниях)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key">
+        <rdfs:comment>Ключи разделены по количеству черт - от 1 до 17</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#KingKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#KingKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LanguageKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LanguageKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LegKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LegKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LifeKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LifeKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LongKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LongKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MeatKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MeatKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MetalKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MetalKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MiddleLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MiddleLevel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MoonKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MoonKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MotherKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MotherKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MountainKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MountainKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MouthKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MouthKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MyselfKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MyselfKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NatureKanji -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NatureKanji">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NeckKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NeckKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NoseKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NoseKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#14Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OldBirdKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OldBirdKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OneKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OneKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#1Key"/>
+        <rdfs:comment>ichi - один</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OpenBoxKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OpenBoxKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKanji"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKanji -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKanji">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PlateKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PlateKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PowerKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PowerKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RainKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RainKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RedKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RedKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RiceFieldKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RiceFieldKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RiceKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RiceKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RoadKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RoadKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RunKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RunKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SakeKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SakeKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SamuraiKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SamuraiKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SeaShellKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SeaShellKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SeeKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SeeKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ShipKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ShipKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ShortThreadKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ShortThreadKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SmallKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SmallKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SnakeKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SnakeKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SoundKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SoundKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SpiritKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SpiritKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SpoonKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SpoonKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StandKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StandKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Star -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Star">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HighLevel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NatureKanji"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SunKey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StoneKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StoneKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StopKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StopKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Sun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Sun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NatureKanji"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SunKey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SunKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SunKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SurfaceKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SurfaceKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SweetKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SweetKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SwordKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SwordKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TableKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TableKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TalkKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TalkKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TallKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TallKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#10Key"/>
+        <rdfs:comment>takai - высокий, дорогой</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Things -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Things">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Kanji"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ThreadKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ThreadKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ToothKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ToothKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#15Key"/>
+        <rdfs:comment>ha | зуб</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NatureKanji"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasKey"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TreeKey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#hasLevelValue"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TreeKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TreeKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TwoKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TwoKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#UseKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#UseKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WalkingPersonKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WalkingPersonKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WaterKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WaterKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WheelKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WheelKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WhiteKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WhiteKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WideStepKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WideStepKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WindKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WindKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WinterKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WinterKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WomanKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WomanKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WoolKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WoolKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WritingBrushKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WritingBrushKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#YellowKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#YellowKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#13Key"/>
+        <rdfs:comment>ki - желтый</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#1Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#1Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#10Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#10Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#11Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#11Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#13Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#13Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#14Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#14Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#15Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#15Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#16Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#16Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#17Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#17Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Key"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Book -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Book">
+        <rdf:type rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Investigations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Investigations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MiddleLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Star -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Star">
+        <rdf:type rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HighLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Sun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Sun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Tree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Tree">
+        <rdf:type rdf:resource="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EasyLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Book">
+        <rdfs:comment>本&quot;книга&quot;
+Он-ёми
+ ホン - hon 
+　　 1) книга
+　　 2) этот, данный (в сочет.)
+Кун-ёми
+ 本 -  ほん - hon 
+　　  книга
+ 本 -  もと - moto 
+　　  корень, начало, источник, происхождение, основа</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Person">
+        <rdfs:comment>人 &quot;человек&quot;
+Он-ёми
+ ニン - nin 
+ ジン - jin 
+Кун-ёми
+ 人 -  ひと - hito 
+　　 1) человек, люди
+　　 2) другой; другие
+ 人の -  ひとの - hitono 
+　　  чужой
+ 人々 -  ひとびと - hitobito 
+　　  люди, народ
+ 人々 -  にんにん - ninnin 
+　　  каждый [человек]</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Star">
+        <rdfs:comment>星	      ほし      hoshi- звезда
+1
+土星	      どせい       dosei
+Сатурн
+
+2
+北斗星	      ほくとせい      hokutosei
+Большая Медведица
+
+3
+星屑	      ほしくず      hoshikuzu
+звездная пыль</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Sun">
+        <rdfs:comment>日&quot;солнце&quot;
+Он-ёми
+ ニ - ni 
+　　  Япония, Японский (в сочетаниях)
+ ニチ - nichi 
+　　  день (в сочетаниях)
+ ジツ - jitsu 
+　　  день; Япония, Японский (в сочетаниях)
+ カ - ka 
+　　  употребляется при счете дней (в сочетаниях)
+Кун-ёми
+ 日 -  ひ - hi 
+　　 1) Солнце
+　　 2) день; солнечный свет
+ 日々 -  ひび - hibi 
+　　  каждый день, ежедневно, день за днём
+ 日々 -  ひにち - hinichi 
+　　  дни
+ 日々 -  にちにち - nichinichi 
+　　 1) каждый день, ежедневно
+　　 2) день за днём</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#Tree">
+        <rdfs:comment>木 &quot;дерево&quot;	
+Он-ёми
+ モク - moku 
+ ボク - boku 
+Кун-ёми
+ 木 -  き - ki 
+　　 1) дерево
+　　 2) дерево (материал)
+ 木々 -  きぎ - kigi 
+　　  деревья</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ArrowKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EyeKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LifeKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PlateKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RiceFieldKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StandKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StoneKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SweetKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#UseKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WhiteKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#AxKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CowKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DeathKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DirectionKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DogKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DorKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FatherKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FireKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HandKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HeartKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#KingKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MoonKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MotherKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SpiritKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#StopKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SunKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TreeKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WaterKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WoolKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BabyKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BigKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BoxKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ClothesKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CrownKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DryKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EarthKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EveningKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FlagKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GlueKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MountainKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MouthKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SamuraiKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ShortThreadKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SmallKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SnakeKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WalkingPersonKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WideStepKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WinterKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WomanKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BambooKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BloodKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ColorKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EarKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GoKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#InsectKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LanguageKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MeatKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MyselfKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RiceKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ShipKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#ThreadKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WritingBrushKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#BobKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LegKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RedKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RoadKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RunKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SakeKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SeaShellKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SeeKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TalkKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WheelKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CoverKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#CrossKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DropsOfWaterKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EightKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#EnterKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HumanFeetKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OpenBoxKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PersonKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#PowerKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SpoonKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SwordKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TableKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TwoKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#DemonKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HorseKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#TallKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FlyKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#FoodKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#HeadKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#NeckKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SoundKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#SurfaceKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#WindKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GateKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#GreenBlueKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#LongKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#MetalKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#OldBirdKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#RainKey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#1Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#10Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#11Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#13Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#14Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#15Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#16Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#17Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#2Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#3Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#4Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#5Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#6Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#7Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#8Key"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/лиза/ontologies/2019/10/untitled-ontology-15#9Key"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

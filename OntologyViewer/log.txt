@@ -1,0 +1,66 @@
+2022-08-22 16:34:52.184376:
+Traceback (most recent call last):
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 45, in build
+    request = Request(screen, onto)
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 48, in __init__
+    self.build()
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 353, in build
+    (self.background_color, colors['very_light_grey'],
+KeyError: 'very_light-grey'
+
+2022-08-24 11:35:28.203175:
+Traceback (most recent call last):
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 58, in build
+    run(manager)
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 24, in run
+    manager.get_tab(manager.status).build()
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Classes\manager.py", line 30, in get_tab
+    return  self.navigation[tab_name]
+KeyError: 'C:\\Users\\BerdnikovNO\\PycharmProjects\\OntologyModelPygame\\Models\\OntologyModelMechel.owl'
+
+2022-08-24 11:35:28.205087:
+Traceback (most recent call last):
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 58, in build
+    run(manager)
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 24, in run
+    manager.get_tab(manager.status).build()
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Classes\manager.py", line 30, in get_tab
+    return  self.navigation[tab_name]
+KeyError: 'C:\\Users\\BerdnikovNO\\PycharmProjects\\OntologyModelPygame\\Models\\PizzaModel.owl'
+
+2022-08-25 08:58:04.575270:
+Traceback (most recent call last):
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 58, in build
+    run(manager)
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 26, in run
+    manager.set_status(manager.get_tab(manager.status).run(manager))
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 57, in run
+    result_update = self.update()
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 259, in update
+    name = string.readlines()[-1]
+IndexError: list index out of range
+
+2022-08-25 08:58:32.271631:
+Traceback (most recent call last):
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 58, in build
+    run(manager)
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 26, in run
+    manager.set_status(manager.get_tab(manager.status).run(manager))
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 57, in run
+    result_update = self.update()
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 259, in update
+    name = string.readlines()[-1]
+IndexError: list index out of range
+
+2022-08-25 08:58:44.815626:
+Traceback (most recent call last):
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 58, in build
+    run(manager)
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\OntologyViewer.py", line 26, in run
+    manager.set_status(manager.get_tab(manager.status).run(manager))
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 57, in run
+    result_update = self.update()
+  File "C:\Users\BerdnikovNO\PycharmProjects\OntologyModelPygame\Tabs\request.py", line 259, in update
+    name = string.readlines()[-1]
+IndexError: list index out of range
+

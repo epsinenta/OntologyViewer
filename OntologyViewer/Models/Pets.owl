@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/berdnikovno/ontologies/2022/7/untitled-ontology-30"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/berdnikovno/ontologies/2022/7/untitled-ontology-30">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#afraid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#frighten"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_parent_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#like"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lucy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pudge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Pet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Pet"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Dog"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cat"/>
+        <NamedIndividual IRI="#Kit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dog"/>
+        <NamedIndividual IRI="#Lina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cat"/>
+        <NamedIndividual IRI="#Lucy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dog"/>
+        <NamedIndividual IRI="#Pudge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cat"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#frighten"/>
+        <NamedIndividual IRI="#Jack"/>
+        <NamedIndividual IRI="#Lucy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_parent_for"/>
+        <NamedIndividual IRI="#Jack"/>
+        <NamedIndividual IRI="#Pudge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#like"/>
+        <NamedIndividual IRI="#Jack"/>
+        <NamedIndividual IRI="#Lina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afraid"/>
+        <NamedIndividual IRI="#Kit"/>
+        <NamedIndividual IRI="#Lina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_parent_for"/>
+        <NamedIndividual IRI="#Kit"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#like"/>
+        <NamedIndividual IRI="#Kit"/>
+        <NamedIndividual IRI="#Lucy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#frighten"/>
+        <NamedIndividual IRI="#Lina"/>
+        <NamedIndividual IRI="#Kit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_parent_for"/>
+        <NamedIndividual IRI="#Lina"/>
+        <NamedIndividual IRI="#Pudge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#like"/>
+        <NamedIndividual IRI="#Lina"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afraid"/>
+        <NamedIndividual IRI="#Lucy"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_parent_for"/>
+        <NamedIndividual IRI="#Lucy"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#like"/>
+        <NamedIndividual IRI="#Lucy"/>
+        <NamedIndividual IRI="#Kit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#frighten"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_parent"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_parent"/>
+        <NamedIndividual IRI="#Pudge"/>
+        <NamedIndividual IRI="#Lina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afraid"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Pudge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_parent"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Kit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_parent"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Lucy"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

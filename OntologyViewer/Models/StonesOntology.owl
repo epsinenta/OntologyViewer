@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.stones.com/ontologies/Stones-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.stones.com/ontologies/Stones-ontology">
+    <Prefix name="" IRI="http://www.stones.com/ontologies/Stones-ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amethyst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Colour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfFeldspars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfGarnets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfOrganicMaterials"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupTheJades"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Hardness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Jasper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#NonPreciousStones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Organic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Quartz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Stones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Transparency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#TypesOfBorders"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCountryOfProduction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasTransparency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#hasBordersValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Brazil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Russia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#USA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Ukraine"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Brazil"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#China"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Russia"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#USA"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Ukraine"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#hasBordersValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#NonPreciousStones"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Stones"/>
+                <ObjectComplementOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCut"/>
+                        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectComplementOf>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCut"/>
+                <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#hasBordersValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">57</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Stones"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCut"/>
+                    <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasTransparency"/>
+                    <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amethyst"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasTransparency"/>
+                    <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Quartz"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCut"/>
+                <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amethyst"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByQuality"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Colour"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfFeldspars"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfGarnets"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfOrganicMaterials"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupTheJades"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByGroups"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Hardness"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Jasper"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#TypesOfBorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#NonPreciousStones"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Stones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Organic"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#NonPreciousStones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#TypesOfBorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Stones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Quartz"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Transparency"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#ClassificationByQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#TypesOfBorders"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amethyst"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Jasper"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amethyst"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Quartz"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Colour"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Hardness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Colour"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Transparency"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfFeldspars"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfGarnets"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfFeldspars"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfOrganicMaterials"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfFeldspars"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfFeldspars"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupTheJades"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfGarnets"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfOrganicMaterials"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfGarnets"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfGarnets"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupTheJades"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfOrganicMaterials"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfOrganicMaterials"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupTheJades"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupOfQuartz"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#GroupTheJades"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Hardness"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Transparency"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Jasper"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Quartz"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#MarquisCut"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#OvalCut"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#NonPreciousStones"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#PreciousStones"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Organic"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Amber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Brazil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#USA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Country"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Ukraine"/>
+    </ClassAssertion>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasCut"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#TypesOfBorders"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#HasTransparency"/>
+        <Class IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#Transparency"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#hasBordersValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-4#hasBordersValue"/>
+    </FunctionalDataProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
